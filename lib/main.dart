@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/screens/authentication/SignIn.dart';
 import 'package:login_app/screens/authentication/SignUp.dart';
 import 'package:login_app/screens/authentication/Login.dart';
 
@@ -66,7 +67,7 @@ class _HomeState extends State<Home> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Login()
+                        builder: (context) => SignIn()
                       )
                   );
                 },

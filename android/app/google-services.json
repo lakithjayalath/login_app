@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095368165802",
+    "firebase_url": "https://login-app-9928c.firebaseio.com",
+    "project_id": "login-app-9928c",
+    "storage_bucket": "login-app-9928c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095368165802:android:9fa6bd33b3281aae1b83d3",
+        "android_client_info": {
+          "package_name": "com.lakithjayalath.login_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095368165802-4mtmif0nqlum15opso3i5rcd38g2o8uv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBWKJarvw5j4krscYuieUAFcGmGySuHWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095368165802-4mtmif0nqlum15opso3i5rcd38g2o8uv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
