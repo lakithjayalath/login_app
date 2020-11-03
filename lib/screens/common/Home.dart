@@ -3,6 +3,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location_permissions/location_permissions.dart';
+import 'package:login_app/screens/services/auth.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -10,6 +11,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  final AuthService _auth = AuthService();
 
   Position _currentPosition;
 
@@ -37,6 +40,14 @@ class _HomeState extends State<Home> {
         ),
         backgroundColor: Colors.grey[850],
         centerTitle: true,
+        actions: [
+          FlatButton.icon(
+              onPressed: () async {
+                await _auth.signOut();
+              },
+              icon: Icon(Icons.person, color: Colors.white,),
+              label: Text('logout', style: TextStyle(color: Colors.white),))
+        ],
       ),
       body: Column(
         children: <Widget>[
