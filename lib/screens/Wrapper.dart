@@ -3,6 +3,7 @@ import 'package:login_app/models/user.dart';
 import 'package:login_app/screens/authentication/Authentication.dart';
 import 'package:provider/provider.dart';
 import 'package:login_app/screens/common/Home.dart';
+import 'package:login_app/screens/common/CheckList.dart';
 
 class Wrapper extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class Wrapper extends StatelessWidget {
     if (user == null) {
       return Authentication();
     } else {
-      return Home();
+      return List();
     }
   }
 }
