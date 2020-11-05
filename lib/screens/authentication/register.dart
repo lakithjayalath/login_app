@@ -23,12 +23,15 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[100],
+      backgroundColor: Colors.teal,
       appBar: AppBar(
-        backgroundColor: Colors.brown[400],
+        backgroundColor: Colors.tealAccent,
         elevation: 0.0,
         title: Text(
-            'Sign up to Brew Crew'
+            'Sign up',
+            style: TextStyle(
+              color: Colors.black
+            ),
         ),
         actions: [
           FlatButton.icon(

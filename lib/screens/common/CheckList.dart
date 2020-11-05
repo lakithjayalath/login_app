@@ -81,7 +81,14 @@ class _ListState extends State<List> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List'),
+        title: Text(
+          'Contacts',
+          style: TextStyle(
+            color: Colors.black
+          ),
+        ),
+        backgroundColor: Colors.tealAccent,
+        elevation: 0.0,
         actions: [
           FlatButton.icon(
               onPressed: () async {
@@ -94,7 +101,7 @@ class _ListState extends State<List> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
+        child: ListView(
           children: [
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
@@ -172,7 +179,7 @@ class _ListState extends State<List> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 RaisedButton(
-                  color: Colors.green,
+                  color: Colors.lightGreenAccent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0)
                     ),
@@ -183,7 +190,7 @@ class _ListState extends State<List> {
                     }
                 ),
                 RaisedButton(
-                    color: Colors.blue,
+                    color: Colors.blueAccent,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0)
                     ),
@@ -194,7 +201,7 @@ class _ListState extends State<List> {
                     }
                 ),
                 RaisedButton(
-                    color: Colors.orange,
+                    color: Colors.orangeAccent,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0)
                     ),
@@ -205,7 +212,7 @@ class _ListState extends State<List> {
                     }
                 ),
                 RaisedButton(
-                    color: Colors.red,
+                    color: Colors.redAccent,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8.0)
                     ),
@@ -226,7 +233,7 @@ class _ListState extends State<List> {
                   textDirection: TextDirection.ltr,
                   children: [
                     Expanded(
-                        child: Text('Name')
+                        child: Text('Name',)
                     ),
                     Expanded(
                         child: Text('Contact No')
