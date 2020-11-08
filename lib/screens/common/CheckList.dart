@@ -179,7 +179,7 @@ class _ListState extends State<List> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 RaisedButton(
-                  color: Colors.lightGreenAccent,
+                  color: Colors.blueAccent,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0)
                     ),
@@ -189,17 +189,17 @@ class _ListState extends State<List> {
                       createData();
                     }
                 ),
-                RaisedButton(
-                    color: Colors.blueAccent,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8.0)
-                    ),
-                    child: Text("read"),
-                    textColor: Colors.white,
-                    onPressed: () {
-                      readData();
-                    }
-                ),
+                // RaisedButton(
+                //     color: Colors.blueAccent,
+                //     shape: RoundedRectangleBorder(
+                //         borderRadius: BorderRadius.circular(8.0)
+                //     ),
+                //     child: Text("read"),
+                //     textColor: Colors.white,
+                //     onPressed: () {
+                //       readData();
+                //     }
+                // ),
                 RaisedButton(
                     color: Colors.orangeAccent,
                     shape: RoundedRectangleBorder(
